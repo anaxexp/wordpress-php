@@ -16,6 +16,6 @@ _gotpl() {
 rm -f "${CONF_DIR}/anaxexp.settings.php"
 
 if [[ -n "${ANAXEXP_APP_NAME}" && -n "${WP_VERSION}" ]]; then
-    _gotpl "anaxexp.wp${WP_VERSION}-config.php.tpl" "${CONF_DIR}/anaxexp.wp-config.php"
-    _gotpl "wp-config.php.tpl" "${CONF_DIR}/wp-config.php"
+    _gotpl "anaxexp.wp${WP_VERSION}-config.php.tmpl" "${CONF_DIR}/anaxexp.wp-config.php"
+    _gotpl "wp-config.php.tmpl" "${CONF_DIR}/wp-config.php"
 fi
