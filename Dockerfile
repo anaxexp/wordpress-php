@@ -13,7 +13,7 @@ RUN set -ex; \
         echo "$(cat /etc/sudoers.d/anaxexp), /usr/local/bin/init_wordpress" > /etc/sudoers.d/anaxexp; \
     fi; \
     \
-    mv /usr/local/bin/actions.mk /usr/local/bin/php.mk
+    cp /usr/local/bin/actions.mk /usr/local/bin/php.mk
 
 USER anaxexp
 
