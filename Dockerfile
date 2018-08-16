@@ -8,7 +8,7 @@ RUN set -ex; \
     \
     su-exec anaxexp composer global require wp-cli/wp-cli; \
     su-exec anaxexp composer clear-cache; \
-    su-exec anaxexp curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar -o /usr/local/bin/wp; \
+    su-exec anaxexp curl --url https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar --output /usr/local/bin/wp; \
     su-exec anaxexp chmod +x /usr/local/bin/wp; \
     \
     if [[ -z "${PHP_DEV}" ]]; then \
