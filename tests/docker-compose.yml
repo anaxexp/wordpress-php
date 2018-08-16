@@ -2,7 +2,7 @@ version: "2"
 
 services:
   nginx:
-    image: anaxexp/wordpress-nginx:4-1.13
+    image: anaxexp/nginx
     environment:
       NGINX_BACKEND_HOST: php
       NGINX_VHOST_PRESET: wordpress
