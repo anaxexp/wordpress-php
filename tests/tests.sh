@@ -29,7 +29,7 @@ wp core config --dbname="${DB_NAME}" --dbuser="${DB_USER}" --dbpass="${DB_PASSWO
 wp core install --url="${BASE_URL}" --title="WordPress 4" --admin_user=admin --admin_password=admin --admin_email=admin@example.com
 wp core is-installed
 
-DUPLICATOR_ARCHIVE_URL="https://s3-us-west-2amazonaws.com/anaxexp-presets/wordpress${WP_VERSION}/anaxexp-wordpress${WP_VERSION}-latest.zip"
+DUPLICATOR_ARCHIVE_URL="https://s3-us-west-2.amazonaws.com/anaxexp-presets/wordpress${WP_VERSION}/anaxexp-wordpress${WP_VERSION}-latest.zip"
 FILES_ARCHIVE_URL="https://s3-us-west-1.amazonaws.com/anaxexp-sample-files/drupal-php-import-test/files.tar.gz"
 
 run_action duplicator-import source="${DUPLICATOR_ARCHIVE_URL}"
