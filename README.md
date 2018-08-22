@@ -1,18 +1,18 @@
 # PHP for WordPress Docker Container Image
 
 [![Build Status](https://travis-ci.org/anaxexp/wordpress-php.svg?branch=master)](https://travis-ci.org/anaxexp/wordpress-php)
-[![Docker Pulls](https://img.shields.io/docker/pulls/anaxexperience/wordpress-php.svg)](https://hub.docker.com/r/anaxexperience/wordpress-php)
-[![Docker Stars](https://img.shields.io/docker/stars/anaxexperience/wordpress-php.svg)](https://hub.docker.com/r/anaxexperience/wordpress-php)
-[![Docker Layers](https://images.microbadger.com/badges/image/anaxexperience/wordpress-php.svg)](https://microbadger.com/images/anaxexperience/wordpress-php)
+[![Docker Pulls](https://img.shields.io/docker/pulls/anaxexp/wordpress-php.svg)](https://hub.docker.com/r/anaxexp/wordpress-php)
+[![Docker Stars](https://img.shields.io/docker/stars/anaxexp/wordpress-php.svg)](https://hub.docker.com/r/anaxexp/wordpress-php)
+[![Docker Layers](https://images.microbadger.com/badges/image/anaxexp/wordpress-php.svg)](https://microbadger.com/images/anaxexp/wordpress-php)
 
 ## Docker Images
 
-❗For better reliability we release images with stability tags (`anaxexperience/wordpress-php:7.1-X.X.X`) which correspond to [git tags](https://github.com/anaxexp/wordpress-php/releases). We strongly recommend using images only with stability tags. 
+❗For better reliability we release images with stability tags (`anaxexp/wordpress-php:7.1-X.X.X`) which correspond to [git tags](https://github.com/anaxexp/wordpress-php/releases). We strongly recommend using images only with stability tags. 
 
 Overview:
 
 * All images are based on Alpine Linux
-* Base image: [anaxexperience/php](https://github.com/anaxexp/php)
+* Base image: [anaxexp/php](https://github.com/anaxexp/php)
 * [Travis CI builds](https://travis-ci.org/anaxexp/wordpress-php) 
 * [Docker Hub](https://hub.docker.com/r/anaxexp/wordpress-php)
 
@@ -33,7 +33,7 @@ Supported tags and respective `Dockerfile` links:
 * `7.0-dev-macos` [_(Dockerfile)_]
 * `5.6-dev-macos`, `5-dev-macos` [_(Dockerfile)_]
 
-For better reliability we additionally release images with stability tags (`anaxexperience/wordpress-php:7.1-X.X.X`) which correspond to git tags. We **strongly recommend** using images only with stability tags. 
+For better reliability we additionally release images with stability tags (`anaxexp/wordpress-php:7.1-X.X.X`) which correspond to git tags. We **strongly recommend** using images only with stability tags. 
 
 ## Tools
 
@@ -41,7 +41,7 @@ For better reliability we additionally release images with stability tags (`anax
 
 ## Environment Variables
 
-See at [anaxexperience/php](https://github.com/anaxexp/php)
+See at [anaxexp/php](https://github.com/anaxexp/php)
 
 ## Orchestration Actions
 
@@ -59,7 +59,7 @@ default params values:
     is_hash 0 
 ```
 
-See [anaxexperience/php](https://github.com/anaxexp/php) for all actions
+See [anaxexp/php](https://github.com/anaxexp/php) for all actions
 
 ## Complete WordPress Stack
 
