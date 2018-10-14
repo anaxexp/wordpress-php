@@ -7,8 +7,9 @@ stages:
         apt-get update
         apt-get install -y --no-install-recommends git zip libsqlite3-dev zlib1g-dev
         docker-php-ext-install zip
-        git clone --depth=1 --branch=master https://github.com/anaxexp/wordpress-compose ./var/www
-        rm -rf !$/.git && cp -R ./wordpress-compose/* ./var/www && rm -rf ./wordpress-php
+        mkdir ./var/www
+        git clone --depth=1 --branch=master https://github.com/anaxexp/wordpress-compose.git ./var/www
+        rm -rf !$/.git
         curl --silent --show-error https://getcomposer.org/installer | php
         ./composer.phar install -n --prefer-dist
         cp .env.testing .env
