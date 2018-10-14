@@ -3,16 +3,14 @@ stages:
   steps:
   - runScriptConfig:
       image: anaxexp/wordpress-php:7.1-dev-4.5.0
-      shellScript: |-
+      shellScript: |
         apt-get update
         apt-get install -y --no-install-recommends git zip libsqlite3-dev zlib1g-dev
         docker-php-ext-install zip
         mkdir ./var/www
         git clone --depth=1 --branch=master https://github.com/anaxexp/wordpress-compose.git ./var/www
-        rm -rf !$/.git
         curl --silent --show-error https://getcomposer.org/installer | php
         ./composer.phar install -n --prefer-dist
-        cp .env.testing .env
 - name: Publish image
   steps:
   - publishImageConfig:
